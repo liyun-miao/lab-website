@@ -1,0 +1,168 @@
+/* --- Global styles --- */
+* {
+  box-sizing: border-box; /* includes padding in width calculations */
+}
+
+body {
+  margin: 0;
+  padding-top: 60px;  /* space for fixed navbar */
+  font-family: Arial, sans-serif;
+}
+
+/* --- Navbar --- */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 2rem;      
+  background: #f8f9fa;
+  border-bottom: 2px solid #ddd;
+  z-index: 1000;
+}
+
+.lab-name {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: goldenrod; 
+}
+
+/* Nav container */
+.navbar nav {
+  margin-left: auto;  
+  display: flex;
+  flex-wrap: nowrap;  
+}
+
+.navbar nav a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #333;
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+  white-space: nowrap; 
+  flex-shrink: 0;  
+  margin-left: 1rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.navbar nav a:hover {
+  background: #eef4ff;
+  color: #0056b3;
+}
+
+.navbar nav a.active {
+  background: #e0e0e0; 
+}
+
+/* --- Main content --- */
+.content {
+  max-width: 800px;  
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;   
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+  margin: 2rem auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.content p, 
+.content h2 {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* --- People page --- */
+.people-section {
+  margin-bottom: 2rem; /* spacing between categories */
+}
+
+.people-section h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+  text-align: left;   /* aligns category heading left */
+}
+
+/* Each section's grid of people */
+.people-section .people-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.person {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;      
+  background: white;
+  padding: 0.5rem;     
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: left; 
+}
+
+.person img {
+  width: 150px;   
+  height: 200px;   
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.person .person-info p {
+  font-size: 14px;       /* smaller font for all person descriptions */
+  line-height: 1.5;       /* tighter line spacing */
+  margin-top: 0.2rem;   /* small spacing from name/link */
+  text-align: left;
+  margin-top: 1rem;
+}
+
+/* --- Publication page --- */
+
+.publication-list {
+  text-align: left;       /* left-align all publications */
+  padding-left: 1.5rem;   /* optional indentation */
+  line-height: 1.5;       /* slightly tighter line spacing for readability */
+  font-size: 0.8rem;      /* smaller font */
+}
+
+.publication-list li {
+  margin-bottom: 1.5rem;  /* more space between publications */
+}
+
+.summary-img {
+  width: 60%;   /* only affects this image */
+}
+
+
+.research-content {
+  text-align: left;
+}
+
+.research-content p,
+.research-content ul {
+  line-height: 1.2;
+  margin-bottom: 2.4rem;
+}
+
+.research-content ul li {
+  margin-bottom: 1.2rem;
+}
+
+.research-paragraph {
+  text-align: left !important;
+  line-height: 1.2 !important;
+  margin-bottom: 2.4rem;
+}
+
